@@ -22,13 +22,14 @@ const PageProtection = () => {
         errorToast("Please do not switch tabs!");
         window.focus();
       }
+      window.close();
     };
 
     // Disable right-click
     const disableRightClick = (event) => {
       event.preventDefault();
       errorToast("Right-click is disabled on this page.");
-      window.close();
+      
     };
 
     // Disable copy functionality
